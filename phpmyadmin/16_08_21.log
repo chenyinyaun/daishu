@@ -1,0 +1,14 @@
+[ 2016-08-21T18:11:25+08:00 ] 121.42.0.30 /index.php?m=Public&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004218s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004575s ]
+ERR: 无法加载模块:Public
+
+[ 2016-08-21T18:12:11+08:00 ] 121.42.0.86 /index.php?m=Public&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001150s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001562s ]
+ERR: 无法加载模块:Public
+

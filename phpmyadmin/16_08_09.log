@@ -1,0 +1,91 @@
+[ 2016-08-09T18:05:21+08:00 ] 121.42.0.86 /index.php?s=%24%7B%40print%28md5%28233333%29%29%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001269s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001681s ]
+ERR: 无法加载模块:${@print(md5(233333))}
+
+[ 2016-08-09T18:05:24+08:00 ] 121.42.0.86 /index.php?s=%24%7B%40print%28md5%28233333%29%29%7D%5C
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001163s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001542s ]
+ERR: 无法加载模块:${@print(md5(233333))}\
+
+[ 2016-08-09T18:05:24+08:00 ] 121.42.0.86 /index.php?s=print%28md5%28233333%29%29%3Bdie%28%29%3B%2F*
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001440s ]
+ERR: 无法加载模块:Print(md5(233333));die();
+
+[ 2016-08-09T18:05:49+08:00 ] 121.42.0.86 /index.php?s=$%7B7387324923%2b57832091%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001439s ]
+ERR: 无法加载模块:${7387324923+57832091}
+
+[ 2016-08-09T18:07:14+08:00 ] 121.42.0.86 /index.php?m=Public&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001105s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001443s ]
+ERR: 无法加载模块:Public
+
+[ 2016-08-09T18:11:37+08:00 ] 121.42.0.86 /index.php?s=%24%7B%40print%28md5%28233333%29%29%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001118s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001487s ]
+ERR: 无法加载模块:${@print(md5(233333))}
+
+[ 2016-08-09T18:11:39+08:00 ] 121.42.0.86 /index.php?s=%24%7B%40print%28md5%28233333%29%29%7D%5C
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001428s ]
+ERR: 无法加载模块:${@print(md5(233333))}\
+
+[ 2016-08-09T18:11:41+08:00 ] 121.42.0.86 /index.php?s=print%28md5%28233333%29%29%3Bdie%28%29%3B%2F*
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001448s ]
+ERR: 无法加载模块:Print(md5(233333));die();
+
+[ 2016-08-09T18:12:05+08:00 ] 121.42.0.86 /index.php?s=$%7B7387324923%2b57832091%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001638s ]
+ERR: 无法加载模块:${7387324923+57832091}
+
+[ 2016-08-09T18:12:59+08:00 ] 121.42.0.86 /index.php?m=Public&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001479s ]
+ERR: 无法加载模块:Public
+
+[ 2016-08-09T18:14:19+08:00 ] 121.42.0.86 /index.php?m=Public&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001187s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001530s ]
+ERR: 无法加载模块:Public
+
+[ 2016-08-09T18:15:47+08:00 ] 121.42.0.86 /index.php?s=PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001698s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002105s ]
+ERR: 无法加载模块:PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==
+
+[ 2016-08-09T18:15:49+08:00 ] 121.42.0.86 /index.php?s=amF2YXNjcmlwdDpwcm9tcHQoMTExKTt4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001438s ]
+ERR: 无法加载模块:AmF2YXNjcmlwdDpwcm9tcHQoMTExKTt4
+

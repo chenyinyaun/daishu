@@ -1,0 +1,93 @@
+<extend name="Public/base" />
+
+<block name="body">
+	<!-- 标题栏 -->
+	<div class="main-title">
+		<h2>说说列表</h2>
+	</div>
+	<div class="cf">
+		<div class="fl">
+
+		</div>
+		<!-- 高级搜索 -->
+	</div>
+	<!-- 数据列表 -->
+	<div class="data-table table-striped">
+		<table class="">
+			<thead>
+				<tr>
+					<th class="">ID</th>
+					<th class="">用户昵称</th>
+					<th class="">电话</th>
+					<th class="">时间</th>
+					<th class="">内容</th>
+					<th class="">学校</th>
+					<th class="">状态</th>
+					<th class="">操作</th>
+				</tr>
+			</thead>
+			<tbody>
+				<notempty name="_list">
+					<volist name="_list" id="vo">
+						<tr>
+							<td>{$vo.id} </td>
+							<td>{$vo.}</td>
+							<td>{$vo.mobile}</td>
+							<td>{$vo.time|time_format}</td>
+							<td><span>{$vo.content}</span></td>
+							<td><span>{$vo.school}</span></td>
+
+								<eq name="vo.status" value="1">
+									<td class="status_text">正常</td>
+									<else/>
+									<td class="status_text">被屏蔽了</td>
+								</eq>
+
+							<td>
+								<eq name="vo.status" value="1">
+									<a href="{:U('Message/screen?id='.$vo['id'])}">屏蔽</a>
+									<else/>
+									<a href="{:U('Message/show?id='.$vo['id'])}">显示</a>
+								</eq>
+							</td>
+						</tr>
+					</volist>
+					<else/>
+				</notempty>
+			</tbody>
+		</table>
+	</div>
+	<div class="page">
+		{$_page}
+	</div>
+</block>
+
+<block name="script">
+	<script src="__STATIC__/thinkbox/jquery.thinkbox.js"></script>
+
+	<script type="text/javascript">
+		//搜索功能
+		$("#search").click(function() {
+			var url = $(this).attr('url');
+			var query = $('.search-form').find('input').serialize();
+			query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g, '');
+			query = query.replace(/^&/g, '');
+			if (url.indexOf('?') > 0) {
+				url += '&' + query;
+			} else {
+				url += '?' + query;
+			}
+			window.location.href = url;
+		});
+		//回车搜索
+		$(".search-input").keyup(function(e) {
+			if (e.keyCode === 13) {
+				$("#search").click();
+				return false;
+			}
+		});
+		//导航高亮
+		highlight_subnav('{:U('
+			User / index ')}');
+	</script>
+</block>

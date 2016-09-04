@@ -1,0 +1,258 @@
+[ 2016-09-04T00:26:55+08:00 ] 121.42.0.19 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001317s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001672s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0009s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `onethink_bill` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `onethink_bill` WHERE `status` > 0 ORDER BY time desc LIMIT 50   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=13875296136 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=13875296136 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=13875296136 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15197263322 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15200341770 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15200341770 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Undefined index: status  /alidata/www/onethink/Runtime/Cache/Home/769e70f2e46f34ceb60619bbda5e4691.php 第 345 行.
+NOTIC: [8] Undefined index: status  /alidata/www/onethink/Runtime/Cache/Home/769e70f2e46f34ceb60619bbda5e4691.php 第 345 行.
+NOTIC: [8] Undefined index: status  /alidata/www/onethink/Runtime/Cache/Home/769e70f2e46f34ceb60619bbda5e4691.php 第 345 行.
+NOTIC: [8] Undefined index: status  /alidata/www/onethink/Runtime/Cache/Home/769e70f2e46f34ceb60619bbda5e4691.php 第 345 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014343s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014388s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000470s ]
+
+[ 2016-09-04T01:49:22+08:00 ] 207.46.13.167 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0010s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_bill` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `onethink_bill` WHERE `status` > 0 ORDER BY time desc LIMIT 50   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=13875296136 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=13875296136 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=13875296136 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15197263322 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15200341770 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15200341770 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+NOTIC: [8] Undefined index: status  /alidata/www/onethink/Runtime/Cache/Home/769e70f2e46f34ceb60619bbda5e4691.php 第 345 行.
+NOTIC: [8] Undefined index: status  /alidata/www/onethink/Runtime/Cache/Home/769e70f2e46f34ceb60619bbda5e4691.php 第 345 行.
+NOTIC: [8] Undefined index: status  /alidata/www/onethink/Runtime/Cache/Home/769e70f2e46f34ceb60619bbda5e4691.php 第 345 行.
+NOTIC: [8] Undefined index: status  /alidata/www/onethink/Runtime/Cache/Home/769e70f2e46f34ceb60619bbda5e4691.php 第 345 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014347s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014392s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000423s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000472s ]
+
+[ 2016-09-04T06:19:20+08:00 ] 42.156.251.187 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0009s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_bill` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `onethink_bill` WHERE `status` > 0 ORDER BY time desc LIMIT 50   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=13875296136 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=13875296136 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=13875296136 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15197263322 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15200341770 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15200341770 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] Undefined index: status  /alidata/www/onethink/Runtime/Cache/Home/769e70f2e46f34ceb60619bbda5e4691.php 第 345 行.
+NOTIC: [8] Undefined index: status  /alidata/www/onethink/Runtime/Cache/Home/769e70f2e46f34ceb60619bbda5e4691.php 第 345 行.
+NOTIC: [8] Undefined index: status  /alidata/www/onethink/Runtime/Cache/Home/769e70f2e46f34ceb60619bbda5e4691.php 第 345 行.
+NOTIC: [8] Undefined index: status  /alidata/www/onethink/Runtime/Cache/Home/769e70f2e46f34ceb60619bbda5e4691.php 第 345 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015544s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015589s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000433s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000483s ]
+
+[ 2016-09-04T06:23:11+08:00 ] 42.156.251.187 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001108s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0009s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_bill` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `onethink_bill` WHERE `status` > 0 ORDER BY time desc LIMIT 50   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=13875296136 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=13875296136 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=13875296136 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15197263322 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15200341770 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15200341770 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+NOTIC: [8] Undefined index: status  /alidata/www/onethink/Runtime/Cache/Home/769e70f2e46f34ceb60619bbda5e4691.php 第 345 行.
+NOTIC: [8] Undefined index: status  /alidata/www/onethink/Runtime/Cache/Home/769e70f2e46f34ceb60619bbda5e4691.php 第 345 行.
+NOTIC: [8] Undefined index: status  /alidata/www/onethink/Runtime/Cache/Home/769e70f2e46f34ceb60619bbda5e4691.php 第 345 行.
+NOTIC: [8] Undefined index: status  /alidata/www/onethink/Runtime/Cache/Home/769e70f2e46f34ceb60619bbda5e4691.php 第 345 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014460s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014505s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000137s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000460s ]
+
+[ 2016-09-04T08:34:42+08:00 ] 218.75.70.3 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001118s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000447s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0010s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_bill` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `onethink_bill` WHERE `status` > 0 ORDER BY time desc LIMIT 50   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=13875296136 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=13875296136 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=13875296136 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15197263322 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15200341770 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15200341770 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+NOTIC: [8] Undefined index: status  /alidata/www/onethink/Runtime/Cache/Home/769e70f2e46f34ceb60619bbda5e4691.php 第 345 行.
+NOTIC: [8] Undefined index: status  /alidata/www/onethink/Runtime/Cache/Home/769e70f2e46f34ceb60619bbda5e4691.php 第 345 行.
+NOTIC: [8] Undefined index: status  /alidata/www/onethink/Runtime/Cache/Home/769e70f2e46f34ceb60619bbda5e4691.php 第 345 行.
+NOTIC: [8] Undefined index: status  /alidata/www/onethink/Runtime/Cache/Home/769e70f2e46f34ceb60619bbda5e4691.php 第 345 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015564s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015611s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000460s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000510s ]
+
+[ 2016-09-04T12:00:16+08:00 ] 42.96.144.149 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001868s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000733s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0010s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_bill` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `onethink_bill` WHERE `status` > 0 ORDER BY time desc LIMIT 50   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=13875296136 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=13875296136 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=13875296136 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15197263322 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15200341770 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15200341770 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=15273286058 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+NOTIC: [8] Undefined index: status  /alidata/www/onethink/Runtime/Cache/Home/769e70f2e46f34ceb60619bbda5e4691.php 第 345 行.
+NOTIC: [8] Undefined index: status  /alidata/www/onethink/Runtime/Cache/Home/769e70f2e46f34ceb60619bbda5e4691.php 第 345 行.
+NOTIC: [8] Undefined index: status  /alidata/www/onethink/Runtime/Cache/Home/769e70f2e46f34ceb60619bbda5e4691.php 第 345 行.
+NOTIC: [8] Undefined index: status  /alidata/www/onethink/Runtime/Cache/Home/769e70f2e46f34ceb60619bbda5e4691.php 第 345 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015313s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015359s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000488s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000541s ]
+

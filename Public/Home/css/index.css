@@ -1,0 +1,985 @@
+	/*通用css样式*/
+
+	body {
+		color: #000000;
+		font-family: "微软雅黑", sans-serif;
+		font-size=62.5%;
+		font-size: 1.4em;
+	}
+
+	a {
+		color: #000000;
+	}
+
+	a,
+	a:link,
+	a:visited,
+	a:hover {
+		cursor: pointer;
+		text-decoration: none;
+		/*border: #FFFFFF solid 0px;*/
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	/*固定位置的顶部 header 及隐藏的高度 head*/
+
+	.header {
+		height: 2.3em;
+		position: relative;
+		overflow: hidden;
+		/*z-index: 999;*/
+		background-color: #0066FF;
+		width: 100%;
+		top: 0;
+		left: 0;
+	}
+
+	.back {
+		display: inline-block;
+		float: left;
+		width: 20%;
+		text-align: center;
+		border: 1px solid #0066FF;
+
+	}
+
+	.back a {
+		font-size: 1.2em;
+		color: #FFFFFF;
+	}
+
+	.back a:hover {
+		color: #46B8DA;
+	}
+
+	.title {
+		float: left;
+		text-align: center;
+		display: inline-block;
+		width: 60%;
+		overflow: hidden;
+	}
+
+	.title span {
+		font-size: 1.4em;
+		color: #FFFFFF;
+	}
+
+	.place {
+		float: left;
+		/*border: 1px solid #000000;*/
+		text-align: center;
+		display: inline-block;
+		width: 15%;
+	}
+
+	.place a {
+		font-size: 1em;
+		color: #FFFFFF;
+	}
+
+	.head {
+		width: 100%;
+		height: 3.5em;
+	}
+
+	/*(第一)首页页面开始处*/
+
+	.index {
+		height: auto;
+	}
+	/*轮播图片*/
+
+	.swiper-container {
+		height: auto;
+		width: 100%;
+		text-align: center;
+		margin: 0 auto;
+		position: relative;
+		overflow: hidden;
+		z-index: 5;
+		background: #F8F8F8;
+	}
+
+	.swiper-wrapper {
+		position: relative;
+		z-index: 10;
+	}
+
+	.swiper-slide {
+		position: relative;
+		text-align: center;
+		float: left;
+	}
+
+	.swiper-slide a {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		display: block;
+		overflow: hidden;
+	}
+
+	.swiper-slide img {
+		width: 100%;
+		height: 100%;
+		vertical-align: middle;
+		position: relative;
+	}
+
+	.pagination {
+		position: absolute;
+		height: 0.2em;
+		left: 1em;
+		width: 100%;
+		bottom: 0.2em;
+		z-index: 100;
+	}
+
+	.pagination .swiper-pagination-switch {
+		display: inline-block;
+		height: 0.6em;
+		width: 0.6em;
+		background: #FFF;
+		border-radius: 50%;
+		margin-right: 1em;
+	}
+
+	.pagination .swiper-active-switch {
+		background: #fe5e52;
+	}
+	/*功能导航条*/
+
+	.index-nav {
+		border-bottom: solid 10px #EEEEEE;
+		height: 9.2em;
+		width: 100%;
+		margin-top: 0.5em;
+	}
+
+	.index-nav ul {
+		text-align: center;
+		width: 100%;
+	}
+
+	.index-nav ul li i {
+		color: #1DC116;
+		font-size: 1.5em;
+	}
+
+	.index-nav ul li p {
+		color: #000000;
+		line-height: 2.0em;
+		font-size: 1.0em;
+	}
+
+	.index-nav ul li {
+		float: left;
+		width: 25%;
+	}
+
+	.index-nav ul li a i {
+		font-size: 1.7em;
+	}
+
+	.index-content {
+		height: auto;
+		width: 100%;
+	}
+
+	.index-navbar {
+		margin-top: 5px;
+		width: 100%;
+		height: 1.5em;
+		text-align: center;
+		border-bottom: 1px #E2E2E2 solid;
+	}
+
+	.index-navbar li a {
+		height: 1.5em;
+		border-right: 1px #E2E2E2 solid;
+		float: left;
+		width: 33.3%;
+		font-size: 1em;
+		color: #737373;
+	}
+
+	.index-navbar li i {
+		font-size: 1.2em;
+	}
+
+	.task-whole {
+		margin: 0;
+		padding: 0;
+		padding: 0 2%;
+	}
+
+	.task-whole li {
+		display: block;
+		height: auto;
+		width: 100%;
+		position: relative;
+	}
+
+	.individual {
+		margin-top: 1em;
+		height: 4.0em;
+		width: 100%;
+		position: relative;
+	}
+
+	.individual-image {
+		float: left;
+		position: relative;
+		height: 4.0em;
+		width: 20%;
+	}
+
+	.individual-image img {
+		position: absolute;
+		width: 4.3em;
+		height: 4.3em;
+		border-radius: 50%;
+	}
+
+	.individual-name {
+		/*border: 1px #E2E2E2 solid;*/
+		float: left;
+		position: relative;
+		width: 40%;
+		height: 4.0em;
+	}
+
+	.name-nickname {
+		/*border: 1px #E2E2E2 solid;*/
+		position: relative;
+		width: 100%;
+		height: 50%;
+		font-size: 1.0em;
+		color: #000000;
+	}
+
+	.name-school {
+		position: relative;
+		width: 100%;
+		height: 50%;
+		font-size: 0.9em;
+		color: #888888;
+	}
+
+	.individual-time {
+		position: relative;
+		float: left;
+		width: 40%;
+		height: 4.0em;
+	}
+
+	.start-time {
+		position: relative;
+		width: 100%;
+		height: 40%;
+		text-align: right;
+		color: #888888;
+		font-size: 1.0em;
+	}
+
+	.start-time:active {
+		color: #0CA818;
+	}
+
+
+	.end-time button {
+		color: #1DC116;
+		border: 1px #0000FF solid;
+		border-radius: 4px;
+		padding: 3px;
+	}
+
+	#money {
+		background-color: #FF7941;
+		color: #FFFFFF;
+		padding: 0.4em 1.3em;
+		/*border-radius: 50%;*/
+	}
+
+	.task-detail {
+		position: relative;
+		left: 20%;
+		width: 80%;
+		border: 1px #FFFFFF solid;
+		height: auto;
+	}
+
+	.content-explain {
+		position: relative;
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+		max-height: 3.6em;
+	}
+
+	.content-explain p {
+		color: #000000;
+		font-size: 1.05em;
+		line-height: 1.6em;
+	}
+
+	.content-place {
+		margin-top: 0.1em;
+		position: relative;
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+		max-height: 2.0em;
+	}
+
+	.content-place p {
+		color: #888888;
+		font-size: 0.9em;
+	}
+
+	.task-status {
+		position: relative;
+		clear: both;
+		width: 100%;
+		height: 1.7em;
+		margin-top: 0.1em;
+		border-top: 1px dashed #C0C0C0;
+		border-bottom: 2px #E2E2E2 solid;
+	}
+
+	.task-status ul li {
+		width: 50%;
+		height: 1.6em;
+		float: left;
+		text-align: center;
+	}
+
+	.task-status ul>li:first-child {
+		border-right: 1px #C0C0C0 solid;
+	}
+
+	#status {
+		color: #FF7800;
+	}
+
+	.task-status ul li span {
+		color: #888888;
+		font-size: 1.1em;
+	}
+	#tasks span{
+		font-size: 1.0em;
+		color: #2EBE21;
+	}
+	/*(第二)发布的任务*/
+
+	.task {
+		width: 100%;
+		height: auto;
+	}
+
+	.wrap {
+		height: auto;
+		padding: 0 1.5em;
+		width: 100%;
+	}
+
+	.wrap ul {
+		border-bottom: solid 1px #DBDBDB;
+		display: block;
+		height: 3.5em;
+		margin: 0;
+		list-style: none;
+		padding: 0;
+		width: 100%;
+	}
+
+	.wrap ul li {
+		width: 50%;
+		height: 3.0em;
+		display: inline;
+		float: left;
+		padding: 0.8em 0 0 0;
+	}
+
+	.wrap ul li:hover {
+		background-color: #F8F8F8;
+	}
+
+	.change ul:hover {
+		background-color: #F8F8F8;
+	}
+
+	.first-li,
+	.second-li {
+		display: inline;
+	}
+
+	.first-li {
+		display: inline-block;
+		width: 17%;
+		height: auto;
+	}
+
+	.content {
+		/*border-top: solid 10px #F5F5F5;*/
+		border-top: solid 10px #EEEEEE;
+		border-bottom: solid 8px #EEEEEE;
+		height: auto;
+		width: 100%;
+		position: relative;
+		margin-top: 0.8em;
+	}
+
+	.task-name {
+		text-align: center;
+		height: 1.4em;
+		width: 40%;
+		font-size: 1.6em;
+		border: solid 1px #398439;
+		border-radius: 0.4em;
+		margin: 0.7em auto;
+		position: relative;
+		color: #D58512;
+	}
+
+	.text-warning {
+		color: #C12E2A;
+	}
+	/*充值页面*/
+	.balance-charge{
+		margin-top: 2em;
+	}
+	.balance-charge li{
+    width: 44%;
+		float: left;
+		margin-left: 4%;
+
+	}
+
+	/*任务详情页面*/
+
+	.page-task {
+		margin-top: 1.0em;
+		width: 100%;
+		height: auto;
+		padding: 0 2%;
+	}
+
+	.contents-explain {
+		position: relative;
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+	}
+
+	.contents-explain p {
+		color: #000000;
+		font-size: 1.2em;
+		line-height: 1.6em;
+	}
+
+	.contents-place {
+		margin-top: 0.5em;
+		position: relative;
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+	}
+
+	.contents-place p {
+		color: #888888;
+		font-size: 1em;
+	}
+
+	.qiangdan {
+		background-color: #FF7941;
+		color: #FFFFFF;
+		font-size: 1.4em;
+		margin-top: 1em;
+		border-radius: 9px;
+		padding: 0.4em 0.8em;
+		position: relative;
+	}
+
+	.bill-process {
+		color: #A0A0A0;
+	}
+
+	.bill-now {
+		color: #0000FF;
+	}
+	#page-money {
+		color: #000;
+	}
+
+	.bill-comment {
+		border-top: 1px solid #31C135;
+		background-color: #E4F8ED;
+	}
+	/*(第三)说说页面message*/
+
+	.message {
+		margin: 0;
+		padding: 0;
+		padding: 0 2%;
+	}
+
+	.message li {
+		border-top: 1px solid #CCCCCC;
+		display: block;
+		height: auto;
+		width: 100%;
+		position: relative;
+	}
+
+	.page-message {
+		position: relative;
+		left: 20%;
+		width: 80%;
+		border: 1px #FFFFFF solid;
+		height: auto;
+	}
+
+	.message-explain {
+		display: block;
+		position: relative;
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+		max-height: 75px;
+	}
+
+	.message-explain p {
+		font-size: 1.1em;
+		line-height: 1.6em;
+		color: #000000;
+	}
+
+	.message-status {
+		position: relative;
+		display: block;
+		width: 80%;
+		height: 1.5em;
+		margin-left: 20%;
+		/*margin-bottom: 0.5em;*/
+	}
+
+	.message-status li {
+		width: 50%;
+		height: 1.5em;
+		float: left;
+		font-size: 1.0em;
+	}
+
+	.message-status li i {
+		color: #E38D13;
+	}
+
+	.message-status ul li span {
+		color: #888888;
+	}
+	/*说说的具体页面*/
+
+	.messages {
+		border-bottom: 1px solid #B5CFD9;
+		padding: 0 2%;
+	}
+
+	.messages-content {
+		position: relative;
+		left: 20%;
+		width: 80%;
+		height: auto;
+	}
+
+	.messages-content p {
+		font-size: 1.2em;
+	}
+
+	.reply-name {
+		color: #01AB01;
+	}
+
+	.reply-content {
+		color: #000000;
+		font-size: 0.9em;
+	}
+
+	.reply-color {
+		text-align: right;
+		color: #CB4B16;
+	}
+
+	.reply-color:active {
+		color: #006DCC;
+	}
+	/*评论的页面*/
+
+	.message-comments {
+		height: auto;
+		position: relative;
+		width: 100%;
+	}
+
+	.comments-message {
+		position: relative;
+		margin-top: 0.5em;
+		width: 100%;
+		height: auto;
+		padding: 0 2%;
+	}
+
+	.comments-detail {
+		position: relative;
+		margin-left: 20%;
+		width: 80%;
+		height: auto;
+	}
+
+	.comments-detail p {
+		font-size: 1em;
+		line-height: 1.7em;
+	}
+	/*(第四)个人中心*/
+
+	.personal {
+		background-color: #65B042;
+		padding-top: 2em;
+		height: 8em;
+		overflow: hidden;
+		width: 100%;
+		position: relative;
+	}
+
+	.personal-image {
+		float: left;
+		position: relative;
+		height: 5.0em;
+		width: 30%;
+	}
+
+	.personal-image img {
+		position: absolute;
+		margin-left: 10%;
+		width: 4.8em;
+		height: 4.8em;
+		border-radius: 50%;
+	}
+
+	.personal-name {
+		float: left;
+		position: relative;
+		width: 40%;
+		height: 5em;
+	}
+
+	.nickname {
+		position: relative;
+		width: 100%;
+		height: 55%;
+		font-size: 1.5em;
+		color: #FFFFFF;
+	}
+
+	.school {
+		position: relative;
+		width: 100%;
+		height: 45%;
+		font-size: 1.0em;
+		color: #FFFFFF;
+	}
+
+	.personal-time {
+		position: relative;
+		float: left;
+		width: 30%;
+	}
+
+	.zhuxiao {
+		position: relative;
+		width: 100%;
+		height: 40%;
+		text-align: left;
+		font-size: 1.0em;
+	}
+
+	.zhuxiao a {
+		border: #4CAE4C solid 1px;
+		background-color: #FF7941;
+		border-radius: 5px;
+		color: #FFFFFF;
+		padding: 0.4em 1.0em;
+	}
+
+	.end-time {
+		position: relative;
+		width: 100%;
+		height: 60%;
+		text-align: right;
+	}
+	.end-time span {
+		font-size: 0.7em;
+		color: #888888;
+	}
+
+	.personal-nav {
+		clear: both;
+		position: relative;
+	}
+
+	.personal-nav li {
+		text-align: center;
+		float: left;
+		width: 33%;
+		height: 4.6em;
+		border-bottom: 1px solid #CCCCCC;
+	}
+
+	.personal-nav li:nth-child(1) {
+		border-right: 1px solid #CCCCCC;
+	}
+
+	.personal-nav li:nth-child(2) {
+		border-right: 1px solid #CCCCCC;
+	}
+
+	.personal-nav li i {
+		margin-top: 0.4em;
+		color: #0066FF;
+		font-size: 1.6em;
+	}
+
+	.personal-nav li p {
+		margin-top: 0.2em;
+		color: #888888;
+		font-size: 1.0em;
+	}
+
+	.personal-items {
+		border-top: 10px solid #E2E2E2;
+		width: 100%;
+		padding: 0 2%;
+		clear: both;
+	}
+
+	.personal-items li {
+		padding-top: 1.0em;
+		border-bottom: 1px solid #B9DEF0;
+		width: 100%;
+		height: 3.5em;
+	}
+
+	.items-icon {
+		display: inline-block;
+		/*border: 1px solid #B9DEF0;*/
+		width: 10%;
+	}
+
+	.items-icon i {
+		font-size: 1.2em;
+		color: #1DC116;
+	}
+
+	.items-word {
+		/*border: 1px solid #B9DEF0;*/
+		display: inline-block;
+		width: 78%;
+		position: relative;
+	}
+
+	.items-word {
+		font-size: 1.3em;
+	}
+	/*个人中心的登录页面*/
+
+	.login-pic-img {
+		height: 13em;
+		width: 100%;
+		border: 1px #000000 solid;
+		position: relative;
+	}
+
+	.login-pic-img img {
+		width: 100%;
+		height: 13em;
+		position: relative;
+	}
+
+	.login-div {
+		height: 5em;
+		width: 100%;
+		border: 1px #000000 solid;
+	}
+
+	.login-div input {
+		/*border: 0px;*/
+	}
+
+	.login-reg-button {
+		height: 5em;
+		width: 100%;
+		border: 1px #000000 solid;
+	}
+	/*底部固定的评论导航条*/
+
+	.flex-comments {
+		border-top: 1px #CCCCCC solid;
+		position: fixed;
+		bottom: 0px;
+		left: 0px;
+		width: 100%;
+		height: 4.0em;
+		overflow: hidden;
+		z-index: 999;
+		background-color: #FFFFFF;
+	}
+
+	.comments-icon {
+		margin-top: 0.7em;
+		float: left;
+		position: relative;
+		display: inline;
+		color: #AFD9EE;
+		width: 15%;
+		text-align: center;
+	}
+
+	.comments-icon a {
+		color: #FF7941;
+	}
+
+	.comments-words {
+		margin-top: 0.5em;
+		float: left;
+		display: inline;
+		width: 65%;
+		height: 2.5em;
+	}
+
+	.comments-words input {
+		width: 95%;
+		height: 2.5em;
+	}
+
+	.comments-button {
+		float: left;
+		display: inline;
+		width: 20%;
+		margin-top: 0.4em;
+	}
+
+	.comments-button button {
+		background-color: #FF7941;
+		color: #FFFFFF;
+		font-size: 1.0em;
+		border-radius: 0.6em;
+		padding: 0.4em 0.6em;
+	}
+	/*底部固定的导航条 flex-foot及隐藏的固定高度的区域*/
+
+	.foot {
+		height: 5.0em;
+		width: 100%;
+	}
+
+	.flex-foot {
+		border-top: 1px #CCCCCC solid;
+		background-color: #FFFFFF;
+		position: fixed;
+		bottom: 0px;
+		left: 0px;
+		width: 100%;
+		height: 4.0em;
+		overflow: hidden;
+		z-index: 999;
+	}
+
+	.flex-foot ul li {
+		float: left;
+		width: 25%;
+		text-align: center;
+	}
+
+	.flex-foot ul li p {
+		line-height: 1.5em;
+		font-size: 1.1em;
+	}
+
+	.ul-color {
+		color: #AAAAAA;
+	}
+
+	.hover {
+		color: #FF6600;
+	}
+	/*我的说说*/
+	.form-group textarea {
+		outline: none !important;
+		resize: none !important;
+	}
+
+	.sendmessage {
+		margin: 0 0.6em;
+	}
+	/*注册的样式*/
+	.control-label{
+		font-size: 1.5em;
+		color: #000;
+	}
+	/*登陆的样式*/
+
+	.login-pic {
+		width: 100%;
+		height: auto;
+	}
+
+	.login-pic img {
+		width: 100%;
+		height: 100%;
+	}
+	/*这下面是字体的获取*/
+
+	@font-face {
+		font-style: normal;
+		font-weight: 200;
+		src: url("http://www.apple.com/wss/fonts/PingHei/v1/PingHei-light.woff") format("woff"), url("http://www.apple.com/wss/fonts/PingHei/v1/PingHei-light.ttf") format("truetype");
+		*src: url('');
+		/* Copyright (c) 2000-2008, Changzhou SinoType Technology Co., Ltd. All rights reserved. */
+	}
+	/* IE8 and Below
+----------------- */
+
+	@font-face {
+		src: url("http://www.apple.com/wss/fonts/PingHei/v1/PingHei-light.eot?") format("eot");
+		/* Copyright (c) 2000-2008, Changzhou SinoType Technology Co., Ltd. All rights reserved. */
+	}
+
+	@font-face {
+		src: url("http://www.apple.com/wss/fonts/PingHei/v1/PingHei-light.eot?") format("eot");
+		/* Copyright (c) 2000-2008, Changzhou SinoType Technology Co., Ltd. All rights reserved. */
+	}
+
+	@font-face {
+		src: url("http://www.apple.com/wss/fonts/PingHei/v1/PingHei-text.eot?") format("eot");
+		/* Copyright (c) 2000-2008, Changzhou SinoType Technology Co., Ltd. All rights reserved. */
+	}
+
+	@font-face {
+		src: url("http://www.apple.com/wss/fonts/PingHei/v1/PingHei-text.eot?") format("eot");
+		/* Copyright (c) 2000-2008, Changzhou SinoType Technology Co., Ltd. All rights reserved. */
+	}
+
+	@font-face {
+		src: url("http://www.apple.com/wss/fonts/PingHei/v1/PingHei-semibold.eot?") format("eot");
+		/* Copyright (c) 2000-2008, Changzhou SinoType Technology Co., Ltd. All rights reserved. */
+	}
+
+	@font-face {
+		src: url("http://www.apple.com/wss/fonts/PingHei/v1/PingHei-bold.eot?") format("eot");
+		/* Copyright (c) 2000-2008, Changzhou SinoType Technology Co., Ltd. All rights reserved. */
+	}

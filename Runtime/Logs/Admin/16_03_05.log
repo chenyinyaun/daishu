@@ -1,0 +1,12 @@
+[ 2016-03-05T10:57:17+08:00 ] 124.152.60.255 /admin.php?s=/addons/index.html
+ERR: 插件University的入口文件不存在！
+
+[ 2016-03-05T10:58:57+08:00 ] 124.152.60.255 /admin.php?s=/user/certificate.html
+ERR: 非法操作:certificate
+
+[ 2016-03-05T10:59:00+08:00 ] 124.152.60.255 /admin.php?s=/user/certificate.html
+ERR: 非法操作:certificate
+
+[ 2016-03-05T11:41:30+08:00 ] 124.152.60.255 /admin.php?s=/addons/index.html
+ERR: 插件University的入口文件不存在！
+

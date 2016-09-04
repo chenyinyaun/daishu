@@ -1,0 +1,21 @@
+[ 2016-03-01T16:46:34+08:00 ] 14.17.22.36 /index.php?s=/index.php/s/%2FHome%2FUser%2Flogin.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001183s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001538s ]
+ERR: 无法加载模块:Index.php
+
+[ 2016-03-01T17:03:20+08:00 ] 14.17.22.36 /index.php?s=/index.php/s/%2FHome%2FUser%2Flogin.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001132s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001484s ]
+ERR: 无法加载模块:Index.php
+
+[ 2016-03-01T18:46:21+08:00 ] 14.17.22.36 /index.php?s=/index.php/s/%2FHome%2FUser%2Flogin.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001180s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001545s ]
+ERR: 无法加载模块:Index.php
+

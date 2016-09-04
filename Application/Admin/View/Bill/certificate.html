@@ -1,0 +1,85 @@
+<extend name="Public/base" />
+
+<block name="body">
+	<!-- 标题栏 -->
+	<div class="main-title">
+
+	</div>
+	<div class="cf">
+
+		<!-- 高级搜索 -->
+	</div>
+	<!-- 数据列表 -->
+	<div class="data-table table-striped">
+		<table class="">
+			<thead>
+				<tr>
+					<th class="">用户名称</th>
+					<th class="">手机号</th>
+					<th class="">真实姓名</th>
+					<th class="">身份证号</th>
+					<th class="">学校</th>
+					<th class="">宿舍</th>
+					<th class="">学号</th>
+					<th class="">身份证照片</th>
+					<th class="">操作</th>
+				</tr>
+			</thead>
+			<tbody>
+				<notempty name="_list">
+					<volist name="_list" id="vo">
+						<tr>
+							<td>{$vo.username} </td>
+							<td>{$vo.mobile}</td>
+							<td>{$vo.realname}</td>
+							<td>{$vo.idcard}</td>
+							<td>{$vo.school}</td>
+							<td>{$vo.dormitory}</td>
+							<td><span>{$vo.xuehao}</span></td>
+							<td><a href="{$vo.idcardpicture}">查看身份证照片</a>
+							</td>
+							<td>
+									<a href="{:U('Bill/pass',array('id'=>$vo['id'],'certificate'=> 2))}">审核通过</a>
+									<a href="{:U('Bill/pass',array('id'=>$vo['id'],'certificate'=> 0))}">审核不通过</a>
+							</td>
+						</tr>
+					</volist>
+					<else/>
+				</notempty>
+			</tbody>
+		</table>
+	</div>
+	<div class="page">
+		{$_page}
+	</div>
+</block>
+
+<block name="script">
+	<script src="__STATIC__/thinkbox/jquery.thinkbox.js"></script>
+
+	<script type="text/javascript">
+		//搜索功能
+		$("#search").click(function() {
+			var url = $(this).attr('url');
+			var query = $('.search-form').find('input').serialize();
+			query = query.replace(/(&|^)(\w*?\d*?\-*?_*?)*?=?((?=&)|(?=$))/g, '');
+			query = query.replace(/^&/g, '');
+			if (url.indexOf('?') > 0) {
+				url += '&' + query;
+			} else {
+				url += '?' + query;
+			}
+			window.location.href = url;
+		});
+		//回车搜索
+		$(".search-input").keyup(function(e) {
+			if (e.keyCode === 13) {
+				$("#search").click();
+				return false;
+			}
+		});
+		//导航高亮
+		highlight_subnav('{:U('
+			User / index ')}');
+	</script>
+</block>

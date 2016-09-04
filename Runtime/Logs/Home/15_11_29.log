@@ -1,0 +1,2273 @@
+[ 2015-11-29T15:10:04+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000829s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0014s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013485s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013516s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000398s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000432s ]
+
+[ 2015-11-29T15:10:08+08:00 ] ::1 /onethink/index.php?s=/Home/User/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000700s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000939s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000288s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0013s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+
+[ 2015-11-29T15:10:08+08:00 ] ::1 /onethink/index.php?s=/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000911s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000270s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0019s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004935s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005019s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000700s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000759s ]
+
+[ 2015-11-29T15:10:28+08:00 ] ::1 /onethink/index.php?s=/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002302s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0012s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/onethink/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`nickname`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1448781027',`last_login_ip`='0' WHERE `uid` = 1 [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0031s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','0','member','1','1448781027','administrator在2015-11-29 15:10登录了后台') [ RunTime:0.0006s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Common/Common/function.php 第 680 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Common/Common/function.php 第 680 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1448694627 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-11-29T15:10:28+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000719s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000951s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0011s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '清华大学' ORDER BY id desc LIMIT 5   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `onethink_messagecomment` [ RunTime:0.0022s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Controller/IndexController.class.php 第 73 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016182s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016271s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000385s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000428s ]
+
+[ 2015-11-29T15:24:24+08:00 ] ::1 /onethink/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000723s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000946s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0016s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011810s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011851s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000417s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000465s ]
+
+[ 2015-11-29T15:24:26+08:00 ] ::1 /onethink/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000703s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000926s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000295s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0022s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010416s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010444s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000425s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000464s ]
+
+[ 2015-11-29T17:54:53+08:00 ] ::1 /onethink/index.php?s=/Home/User/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003281s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000791s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0019s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008567s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000695s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000758s ]
+
+[ 2015-11-29T17:54:54+08:00 ] ::1 /onethink/index.php?s=/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000331s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0014s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004476s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004515s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000249s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000271s ]
+
+[ 2015-11-29T17:55:06+08:00 ] ::1 /onethink/index.php?s=/Home/Index/sendmessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000932s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0021s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+
+[ 2015-11-29T17:55:06+08:00 ] ::1 /onethink/index.php?s=/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001105s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0013s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005909s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005955s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000339s ]
+
+[ 2015-11-29T17:55:09+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000643s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000844s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000281s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0033s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012032s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012061s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000087s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000434s ]
+
+[ 2015-11-29T19:23:44+08:00 ] ::1 /onethink/index.php?s=/Home/User/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001289s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000312s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0019s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+
+[ 2015-11-29T19:23:44+08:00 ] ::1 /onethink/index.php?s=/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000680s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000919s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000309s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0012s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005477s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005506s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000257s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000282s ]
+
+[ 2015-11-29T19:23:54+08:00 ] ::1 /onethink/index.php?s=/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000701s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000915s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/onethink/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+
+[ 2015-11-29T19:24:00+08:00 ] ::1 /onethink/index.php?s=/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000745s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000999s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000287s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0012s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/onethink/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+
+[ 2015-11-29T19:24:17+08:00 ] ::1 /onethink/index.php?s=/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000655s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000861s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000247s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0013s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/onethink/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0013s ]
+SQL: SELECT `uid`,`nickname`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1448796257',`last_login_ip`='0' WHERE `uid` = 2 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0019s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','2','0','member','2','1448796257','chenyinyuan在2015-11-29 19:24登录了后台') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Common/Common/function.php 第 680 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Common/Common/function.php 第 680 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 2 AND `create_time` > 1448709857 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-11-29T19:24:17+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000955s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0015s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' ORDER BY id desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_messagecomment` [ RunTime:0.0031s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=57 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=56 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=55 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=54 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=53 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013348s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013376s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000373s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000415s ]
+
+[ 2015-11-29T19:24:20+08:00 ] ::1 /onethink/index.php?s=/Home/Index/sendmessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000643s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000846s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000254s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0021s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `mobile` = '18693096095' ORDER BY id desc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006440s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006468s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000392s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000426s ]
+
+[ 2015-11-29T19:24:26+08:00 ] ::1 /onethink/index.php?s=/Home/Index/sendmessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000706s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000937s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000308s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0021s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0013s ]
+SQL: INSERT INTO `onethink_message` (`school`,`mobile`,`time`,`content`,`status`) VALUES ('兰州交通大学','18693096095','1448796266','你好呀','1') [ RunTime:0.0006s ]
+
+[ 2015-11-29T19:24:26+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000805s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0016s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' ORDER BY id desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_messagecomment` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=58 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=57 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=56 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=55 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=54 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011317s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011358s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000805s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000951s ]
+
+[ 2015-11-29T19:32:15+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000796s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0014s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' ORDER BY id desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_messagecomment` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=58 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=57 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=56 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=55 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=54 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011769s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011805s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000467s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000518s ]
+
+[ 2015-11-29T19:32:58+08:00 ] ::1 /onethink/index.php?s=/Home/Index/sendmessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000836s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0024s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `mobile` = '18693096095' ORDER BY id desc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008724s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008761s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000447s ]
+
+[ 2015-11-29T19:33:07+08:00 ] ::1 /onethink/index.php?s=/Home/Index/sendmessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0022s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0018s ]
+SQL: INSERT INTO `onethink_message` (`school`,`mobile`,`time`,`content`,`status`) VALUES ('兰州交通大学','18693096095','1448796787','大家好','1') [ RunTime:0.0003s ]
+
+[ 2015-11-29T19:33:07+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000809s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000302s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0016s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' ORDER BY id desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_messagecomment` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=59 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=58 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=57 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=56 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=55 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014896s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014937s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000481s ]
+
+[ 2015-11-29T19:33:36+08:00 ] ::1 /onethink/index.php?s=/Home/Index/sendmessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000832s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0013s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `mobile` = '18693096095' ORDER BY id desc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008239s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008272s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000397s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000459s ]
+
+[ 2015-11-29T19:33:47+08:00 ] ::1 /onethink/index.php?s=/Home/Index/sendmessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000733s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000940s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000278s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0021s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0013s ]
+SQL: INSERT INTO `onethink_message` (`school`,`mobile`,`time`,`content`,`status`) VALUES ('兰州交通大学','18693096095','1448796827','蜡烛浓厚 哦啊快来点击；阿迪检查了； 将卡拉斯科阿里看到nl.nalkcnlscnaslkn安女呐市场呢 爱哪里哪里看你出来玩 甲壳虫那我可怜你 ','1') [ RunTime:0.0002s ]
+
+[ 2015-11-29T19:33:47+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001268s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000309s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0011s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' ORDER BY id desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_messagecomment` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=60 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=59 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=58 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=57 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=56 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010694s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010726s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000337s ]
+
+[ 2015-11-29T20:16:45+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000675s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000875s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0012s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' ORDER BY id desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_messagecomment` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=60 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=59 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=58 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=57 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=56 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013417s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013448s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000424s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000469s ]
+
+[ 2015-11-29T20:16:49+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000705s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000926s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000271s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0022s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' ORDER BY id desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_messagecomment` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=60 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=59 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=58 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=57 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=56 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011905s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011960s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000419s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000459s ]
+
+[ 2015-11-29T20:16:56+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000646s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000863s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000254s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0016s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' ORDER BY id desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_messagecomment` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=60 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=59 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=58 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=57 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=56 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011448s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011476s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000399s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000452s ]
+
+[ 2015-11-29T20:17:00+08:00 ] ::1 /onethink/index.php?s=/Home/Index/message/id/60/sex/%E5%A5%B3/time/43%E5%88%86%E9%92%9F%E5%89%8D/school/%E5%85%B0%E5%B7%9E%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%A6/username/%E9%99%88%E8%83%A4%E5%85%83/content/%E8%9C%A1%E7%83%9B%E6%B5%93%E5%8E%9A+%E5%93%A6%E5%95%8A%E5%BF%AB%E6%9D%A5%E7%82%B9%E5%87%BB%EF%BC%9B%E9%98%BF%E8%BF%AA%E6%A3%80%E6%9F%A5%E4%BA%86%EF%BC%9B+%E5%B0%86%E5%8D%A1%E6%8B%89%E6%96%AF%E7%A7%91%E9%98%BF%E9%87%8C%E7%9C%8B%E5%88%B0nl.nalkcnlscnaslkn%E5%AE%89%E5%A5%B3%E5%91%90%E5%B8%82%E5%9C%BA%E5%91%A2+%E7%88%B1%E5%93%AA%E9%87%8C%E5%93%AA%E9%87%8C%E7%9C%8B%E4%BD%A0%E5%87%BA%E6%9D%A5%E7%8E%A9+%E7%94%B2%E5%A3%B3%E8%99%AB%E9%82%A3%E6%88%91%E5%8F%AF%E6%80%9C%E4%BD%A0+/mobile/18693096095.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000636s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000833s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000836s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0013s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `onethink_message` WHERE ( id=60 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `onethink_message` SET `browse`='1' WHERE ( id=60 ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_messagecomment` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_messagereply` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `onethink_messagecomment` WHERE ( mid=60 ) ORDER BY id asc  [ RunTime:0.0009s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Controller/IndexController.class.php 第 229 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+NOTIC: [8] Undefined variable: me /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Home/4e4e0fba536e7445bdb65345ece0b91d.php 第 217 行.
+NOTIC: [8] Undefined variable: me /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Home/4e4e0fba536e7445bdb65345ece0b91d.php 第 217 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006688s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006716s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000365s ]
+
+[ 2015-11-29T20:18:59+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000711s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000919s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000258s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0012s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `status` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_messagecomment` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=59 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=58 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=57 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=56 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=55 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012343s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012373s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000390s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000435s ]
+
+[ 2015-11-29T20:19:00+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000974s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000285s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `status` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_messagecomment` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=59 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=58 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=57 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=56 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=55 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014094s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014126s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000414s ]
+
+[ 2015-11-29T20:22:59+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000678s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000899s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0013s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `status` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_messagecomment` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=59 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=58 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=57 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=56 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=55 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013697s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013734s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000380s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000440s ]
+
+[ 2015-11-29T20:23:15+08:00 ] ::1 /onethink/index.php?s=/Home/Index/sendmessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000672s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000958s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000255s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0015s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `mobile` = '18693096095' ORDER BY id desc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009369s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009404s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000527s ]
+
+[ 2015-11-29T20:23:20+08:00 ] ::1 /onethink/index.php?s=/Home/Index/message/id/59/sex/%E5%A5%B3/time/50%E5%88%86%E9%92%9F%E5%89%8D/school/%E5%85%B0%E5%B7%9E%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%A6/username/%E9%99%88%E8%83%A4%E5%85%83/mobile/18693096095/content/%E5%A4%A7%E5%AE%B6%E5%A5%BD.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000861s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0015s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `onethink_message` WHERE ( id=59 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `onethink_message` SET `browse`='1' WHERE ( id=59 ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `onethink_messagecomment` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `onethink_messagereply` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `onethink_messagecomment` WHERE ( mid=59 ) ORDER BY id asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Controller/IndexController.class.php 第 231 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+NOTIC: [8] Undefined variable: me /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Home/4e4e0fba536e7445bdb65345ece0b91d.php 第 217 行.
+NOTIC: [8] Undefined variable: me /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Home/4e4e0fba536e7445bdb65345ece0b91d.php 第 217 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008270s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008308s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000331s ]
+
+[ 2015-11-29T20:23:26+08:00 ] ::1 /onethink/index.php?s=/Home/File/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000869s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0033s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `onethink_file` [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007948s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000374s ]
+
+[ 2015-11-29T20:23:37+08:00 ] ::1 /onethink/index.php?s=/Home/Index/message/id/57/sex/%E5%A5%B3/time/%E6%98%A8%E5%A4%A9+10%3A19/school/%E5%85%B0%E5%B7%9E%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%A6/username/%E9%99%88%E8%83%A4%E5%85%83/content/10/mobile/18693096095.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001161s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0012s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `onethink_message` WHERE ( id=57 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `onethink_message` SET `browse`='1' WHERE ( id=57 ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_messagecomment` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `onethink_messagereply` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `onethink_messagecomment` WHERE ( mid=57 ) ORDER BY id asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Controller/IndexController.class.php 第 231 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Undefined variable: me /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Home/4e4e0fba536e7445bdb65345ece0b91d.php 第 217 行.
+NOTIC: [8] Undefined variable: me /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Home/4e4e0fba536e7445bdb65345ece0b91d.php 第 217 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009246s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009276s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000356s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000433s ]
+
+[ 2015-11-29T20:23:40+08:00 ] ::1 /onethink/index.php?s=/Home/Index/message/id/57/sex/%E5%A5%B3/time/%E6%98%A8%E5%A4%A9+10%3A19/school/%E5%85%B0%E5%B7%9E%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%A6/username/%E9%99%88%E8%83%A4%E5%85%83/content/10/mobile/18693096095.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000743s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000970s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000262s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0011s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `onethink_message` WHERE ( id=57 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `onethink_message` SET `browse`='2' WHERE ( id=57 ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_messagecomment` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `onethink_messagereply` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `onethink_messagecomment` WHERE ( mid=57 ) ORDER BY id asc  [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Controller/IndexController.class.php 第 231 行.
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: INSERT INTO `onethink_messagecomment` (`time`,`mid`,`mobile`,`mphone`,`content`) VALUES ('1448799820','57','18693096095','18693096095','..') [ RunTime:0.0008s ]
+
+[ 2015-11-29T20:23:42+08:00 ] ::1 /onethink/index.php?s=/Home/Index/message/id/57/sex/%E5%A5%B3/time/%E6%98%A8%E5%A4%A9+10%3A19/school/%E5%85%B0%E5%B7%9E%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%A6/username/%E9%99%88%E8%83%A4%E5%85%83/content/10/mobile/18693096095.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000717s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000947s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000249s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0022s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `onethink_message` WHERE ( id=57 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `onethink_message` SET `browse`='3' WHERE ( id=57 ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_messagecomment` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `onethink_messagereply` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `onethink_messagecomment` WHERE ( mid=57 ) ORDER BY id asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_messagereply` WHERE ( mid=125 ) ORDER BY time asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Controller/IndexController.class.php 第 247 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006221s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000325s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000358s ]
+
+[ 2015-11-29T20:23:47+08:00 ] ::1 /onethink/index.php?s=/Home/Index/autoloadmessage.html&page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000684s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000897s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000261s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `status` = 1 ORDER BY id desc LIMIT 3,3   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000351s ]
+
+[ 2015-11-29T20:23:49+08:00 ] ::1 /onethink/index.php?s=/Home/Index/autoloadmessage.html&page=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000712s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000936s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000284s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0018s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `status` = 1 ORDER BY id desc LIMIT 6,3   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000343s ]
+
+[ 2015-11-29T20:23:49+08:00 ] ::1 /onethink/index.php?s=/Home/Index/autoloadmessage.html&page=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000704s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000923s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0023s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `status` = 1 ORDER BY id desc LIMIT 9,3   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000326s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000357s ]
+
+[ 2015-11-29T20:23:49+08:00 ] ::1 /onethink/index.php?s=/Home/Index/autoloadmessage.html&page=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000713s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000933s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000279s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `status` = 1 ORDER BY id desc LIMIT 12,3   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000377s ]
+
+[ 2015-11-29T20:23:50+08:00 ] ::1 /onethink/index.php?s=/Home/Index/autoloadmessage.html&page=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000764s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001017s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `status` = 1 ORDER BY id desc LIMIT 15,3   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000359s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000392s ]
+
+[ 2015-11-29T20:23:50+08:00 ] ::1 /onethink/index.php?s=/Home/Index/autoloadmessage.html&page=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000765s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001006s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0018s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `status` = 1 ORDER BY id desc LIMIT 18,3   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000380s ]
+
+[ 2015-11-29T20:23:50+08:00 ] ::1 /onethink/index.php?s=/Home/Index/autoloadmessage.html&page=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000697s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000916s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0017s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `status` = 1 ORDER BY id desc LIMIT 21,3   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000384s ]
+
+[ 2015-11-29T20:40:01+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000697s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000919s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0016s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `status` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_messagecomment` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=53 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=52 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096093 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=51 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096093 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=50 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096093 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=49 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096093 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014309s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014350s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000498s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000564s ]
+
+[ 2015-11-29T20:40:24+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000959s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `status` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_messagecomment` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=49 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096093 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=48 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096093 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015745s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015783s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000455s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000493s ]
+
+[ 2015-11-29T20:40:27+08:00 ] ::1 /onethink/index.php?s=/Home/Index/autoloadmessage.html&page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000705s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000926s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0024s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `status` = 1 ORDER BY id desc LIMIT 3,3   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000312s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000339s ]
+
+[ 2015-11-29T21:12:10+08:00 ] ::1 /onethink/index.php?s=/Home/User/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001842s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002147s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0013s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007057s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000415s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000457s ]
+
+[ 2015-11-29T21:12:11+08:00 ] ::1 /onethink/index.php?s=/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001170s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000568s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0024s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005105s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005140s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000299s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000324s ]
+
+[ 2015-11-29T21:12:28+08:00 ] ::1 /onethink/index.php?s=/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000696s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000996s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0013s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: lite /Applications/XAMPP/xamppfiles/htdocs/onethink/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0016s ]
+SQL: SELECT `uid`,`nickname`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `onethink_member` WHERE `uid` = 27 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `onethink_member` SET `login`=`login`+1,`last_login_time`='1448802748',`last_login_ip`='0' WHERE `uid` = 27 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0011s ]
+SQL: INSERT INTO `onethink_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','27','0','member','27','1448802748','abc在2015-11-29 21:12登录了后台') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Common/Common/function.php 第 680 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Common/Common/function.php 第 680 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` WHERE `action_id` = 1 AND `user_id` = 27 AND `create_time` > 1448716348 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-11-29T21:12:28+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000739s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000968s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000256s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0014s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=27 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `status` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_messagecomment` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=60 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=59 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=58 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=57 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=56 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011018s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000474s ]
+
+[ 2015-11-29T21:12:32+08:00 ] ::1 /onethink/index.php?s=/Home/Index/sendmessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000701s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000920s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000537s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0012s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=27 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `mobile` = '18693096092' ORDER BY id desc  [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Controller/IndexController.class.php 第 174 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005347s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005392s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000766s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000872s ]
+
+[ 2015-11-29T21:12:37+08:00 ] ::1 /onethink/index.php?s=/Home/Index/sendmessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000872s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000289s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0023s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=27 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0026s ]
+SQL: INSERT INTO `onethink_message` (`school`,`mobile`,`time`,`content`,`status`) VALUES ('兰州交通大学','18693096092','1448802757','大家好呢','1') [ RunTime:0.0004s ]
+
+[ 2015-11-29T21:12:37+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001726s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002139s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0024s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=27 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `status` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_messagecomment` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=61 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096092 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=60 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=59 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=58 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=57 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014255s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014304s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000484s ]
+
+[ 2015-11-29T21:14:29+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000753s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000982s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0014s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=27 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `status` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_messagecomment` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=60 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=59 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=58 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=57 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=56 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014060s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014109s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000465s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000513s ]
+
+[ 2015-11-29T21:14:32+08:00 ] ::1 /onethink/index.php?s=/Home/Index/message/id/59/sex/%E5%A5%B3/time/1%E5%B0%8F%E6%97%B6%E5%89%8D/school/%E5%85%B0%E5%B7%9E%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%A6/username/%E9%99%88%E8%83%A4%E5%85%83/content/%E5%A4%A7%E5%AE%B6%E5%A5%BD/mobile/18693096095.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000664s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000947s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000251s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0012s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `onethink_message` WHERE ( id=59 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `onethink_message` SET `browse`='2' WHERE ( id=59 ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `onethink_messagecomment` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_messagereply` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `onethink_messagecomment` WHERE ( mid=59 ) ORDER BY id asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Controller/IndexController.class.php 第 231 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+NOTIC: [8] Undefined variable: me /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Home/4e4e0fba536e7445bdb65345ece0b91d.php 第 217 行.
+NOTIC: [8] Undefined variable: me /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Home/4e4e0fba536e7445bdb65345ece0b91d.php 第 217 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007760s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007785s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000079s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000320s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000353s ]
+
+[ 2015-11-29T21:14:34+08:00 ] ::1 /onethink/index.php?s=/Home/Index/message/id/60/sex/%E5%A5%B3/time/1%E5%B0%8F%E6%97%B6%E5%89%8D/school/%E5%85%B0%E5%B7%9E%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%A6/username/%E9%99%88%E8%83%A4%E5%85%83/content/%E8%BF%99%E6%98%AF%E8%AF%B4%E8%AF%B4/mobile/18693096095.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000930s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000472s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0030s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `onethink_message` WHERE ( id=60 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `onethink_message` SET `browse`='2' WHERE ( id=60 ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `onethink_messagecomment` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `onethink_messagereply` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `onethink_messagecomment` WHERE ( mid=60 ) ORDER BY id asc  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Controller/IndexController.class.php 第 231 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: me /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Home/4e4e0fba536e7445bdb65345ece0b91d.php 第 217 行.
+NOTIC: [8] Undefined variable: me /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Home/4e4e0fba536e7445bdb65345ece0b91d.php 第 217 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007156s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007219s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000274s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000298s ]
+
+[ 2015-11-29T21:24:44+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002988s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003699s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000844s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0021s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=27 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `status` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `onethink_messagecomment` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=60 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=59 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=58 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=57 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=56 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017076s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017115s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000650s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000695s ]
+
+[ 2015-11-29T21:24:49+08:00 ] ::1 /onethink/index.php?s=/Home/Index/sendmessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000706s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000257s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0025s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=27 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `mobile` = '18693096092' ORDER BY id desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006624s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006658s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000291s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000315s ]
+
+[ 2015-11-29T21:24:51+08:00 ] ::1 /onethink/index.php?s=/Home/Index/sendmessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000804s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000290s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0035s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=27 ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2015-11-29T21:25:35+08:00 ] ::1 /onethink/index.php?s=/Home/Index/sendmessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000903s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0024s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=27 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `mobile` = '18693096092' ORDER BY id desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009243s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009322s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000139s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000296s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000322s ]
+
+[ 2015-11-29T21:25:36+08:00 ] ::1 /onethink/index.php?s=/Home/Index/sendmessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001158s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001533s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0018s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=27 ) LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2015-11-29T21:25:44+08:00 ] ::1 /onethink/index.php?s=/Home/Index/sendmessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000735s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000965s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000282s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0013s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=27 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `mobile` = '18693096092' ORDER BY id desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006661s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006690s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000262s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000285s ]
+
+[ 2015-11-29T21:25:55+08:00 ] ::1 /onethink/index.php?s=/Home/Index/sendmessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000696s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000901s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000252s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0013s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=27 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-11-29T21:25:58+08:00 ] ::1 /onethink/index.php?s=/Home/Index/sendmessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000978s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0024s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=27 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0022s ]
+SQL: INSERT INTO `onethink_message` (`school`,`mobile`,`time`,`content`,`status`) VALUES ('兰州交通大学','18693096092','1448803558','非 v','1') [ RunTime:0.0003s ]
+
+[ 2015-11-29T21:25:58+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001955s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0016s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=27 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `status` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_messagecomment` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=62 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096092 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=60 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=59 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=58 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=57 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012181s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012230s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000603s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000739s ]
+
+[ 2015-11-29T21:26:18+08:00 ] ::1 /onethink/index.php?s=/Home/Index/sendmessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000887s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0023s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=27 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `mobile` = '18693096092' ORDER BY id desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006117s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006155s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000268s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000291s ]
+
+[ 2015-11-29T21:26:21+08:00 ] ::1 /onethink/index.php?s=/Home/Index/sendmessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000771s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000288s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0023s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=27 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-11-29T21:26:29+08:00 ] ::1 /onethink/index.php?s=/Home/Index/sendmessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000910s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0023s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=27 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0016s ]
+SQL: INSERT INTO `onethink_message` (`school`,`mobile`,`time`,`content`,`status`) VALUES ('兰州交通大学','18693096092','1448803589','说说的文字长度不能超过100说说的文字长度不能超过100说说的文字长度不能超过100说说的文字长度不能超过100说说的文字长度不能超过100说说的文字长度不能超过100说说的文字长度不能超过100说说的文字长度不能超过100说说的文字长度不能超过100说说的文字长度不能超过100说说的文字长度不能超过100说说的文字长度不能超过100说说的文字长度不能超过100说说的文字长度不能超过100说说的文字长度不能超过100说说的文字长度不能超过100说说的文字长度不能超过100说说的文字长度不能超过100说说的文字长度不能超过100说说的文字长度不能超过100','1') [ RunTime:0.0014s ]
+
+[ 2015-11-29T21:26:29+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001330s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001866s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0016s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=27 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `status` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `onethink_messagecomment` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=63 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096092 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=62 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096092 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=60 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=59 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=58 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013551s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013583s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000409s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000457s ]
+
+[ 2015-11-29T21:26:43+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000924s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0019s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=27 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `status` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_messagecomment` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=62 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096092 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=60 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=59 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=58 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=57 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014829s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000453s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000503s ]
+
+[ 2015-11-29T21:27:02+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000688s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000905s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0016s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=27 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `status` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_messagecomment` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=63 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096092 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=62 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096092 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=60 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=59 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=58 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012215s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012246s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000482s ]
+
+[ 2015-11-29T21:27:16+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001325s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0022s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=27 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `status` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_messagecomment` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=62 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096092 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=60 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=59 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=58 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=57 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014611s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014650s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000597s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000652s ]
+
+[ 2015-11-29T21:27:49+08:00 ] ::1 /onethink/index.php?s=/Home/Index/autoloadmessage.html&page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000814s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0023s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=27 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `status` = 1 ORDER BY id desc LIMIT 3,3   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000388s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000421s ]
+
+[ 2015-11-29T21:27:50+08:00 ] ::1 /onethink/index.php?s=/Home/Index/autoloadmessage.html&page=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000794s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000288s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0024s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=27 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `status` = 1 ORDER BY id desc LIMIT 6,3   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000405s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000437s ]
+
+[ 2015-11-29T21:27:51+08:00 ] ::1 /onethink/index.php?s=/Home/Index/autoloadmessage.html&page=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000751s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000972s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0022s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=27 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `status` = 1 ORDER BY id desc LIMIT 9,3   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000311s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000339s ]
+
+[ 2015-11-29T21:27:51+08:00 ] ::1 /onethink/index.php?s=/Home/Index/autoloadmessage.html&page=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000714s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000961s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000312s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=27 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `status` = 1 ORDER BY id desc LIMIT 12,3   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000345s ]
+
+[ 2015-11-29T21:27:52+08:00 ] ::1 /onethink/index.php?s=/Home/Index/autoloadmessage.html&page=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000795s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001021s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0021s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=27 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `status` = 1 ORDER BY id desc LIMIT 15,3   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000338s ]
+
+[ 2015-11-29T21:27:52+08:00 ] ::1 /onethink/index.php?s=/Home/Index/autoloadmessage.html&page=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000798s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000282s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0020s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=27 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `status` = 1 ORDER BY id desc LIMIT 18,3   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000351s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000382s ]
+
+[ 2015-11-29T21:27:54+08:00 ] ::1 /onethink/index.php?s=/Home/Index/autoloadmessage.html&page=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000765s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001006s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0021s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=27 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `status` = 1 ORDER BY id desc LIMIT 21,3   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000377s ]
+
+[ 2015-11-29T21:27:56+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000637s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000841s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000251s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0016s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=27 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `status` = 1 ORDER BY id desc LIMIT 5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `onethink_messagecomment` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=62 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096092 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=60 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=59 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=58 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_messagecomment` WHERE ( mid=57 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( mobile=18693096095 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: pda /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Home/Common/function.php 第 54 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014567s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014603s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000427s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000476s ]
+
+[ 2015-11-29T21:27:59+08:00 ] ::1 /onethink/index.php?s=/Home/Index/autoloadmessage.html&page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000861s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000331s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0023s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `onethink_ucenter_member` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `onethink_ucenter_member` WHERE ( id=27 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `onethink_message` WHERE `school` = '兰州交通大学' AND `status` = 1 ORDER BY id desc LIMIT 3,3   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000428s ]
+

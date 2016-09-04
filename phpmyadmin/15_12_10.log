@@ -1,0 +1,42 @@
+[ 2015-12-10T11:34:44+08:00 ] 121.42.0.37 /index.php?m=search&c=index&a=public_get_suggest_keyword&url=asdf&q=../../phpsso_server/caches/configs/database.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001189s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001548s ]
+ERR: 无法加载模块:Search
+
+[ 2015-12-10T11:35:38+08:00 ] 121.42.0.37 /index.php?m=Goods&a=showcate&id=103%20and%20(select%201%20from%20(select%20count(*),concat(md5(233333),floor(rand(0)*2))x%20from%20information_schema.tables%20group%20by%20x)a)
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001103s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001466s ]
+ERR: 无法加载模块:Goods
+
+[ 2015-12-10T11:36:32+08:00 ] 121.42.0.37 /index.php?m=tg/admin&s=delivery_address
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001380s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001810s ]
+ERR: 无法加载模块:Delivery_address
+
+[ 2015-12-10T11:36:35+08:00 ] 121.42.0.37 /index.php?m=download/admin&s=order_update
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001197s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001552s ]
+ERR: 无法加载模块:Order_update
+
+[ 2015-12-10T11:36:38+08:00 ] 121.42.0.37 /index.php?m=buy/admin&s=add_cat
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001218s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001590s ]
+ERR: 无法加载模块:Add_cat
+
+[ 2015-12-10T11:37:18+08:00 ] 121.42.0.37 /index.php?m=vote&c=index&a=post&subjectid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001126s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001482s ]
+ERR: 无法加载模块:Vote
+
